@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message protoMatrix {
+    int32 height = 1;
+    int32 width = 2;
+    repeated double data = 3;
+}
+
+// protoc --cpp_out=. matrix.proto
